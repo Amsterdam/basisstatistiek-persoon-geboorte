@@ -1,0 +1,43 @@
+,naam,type database,format database,type sas,format sas,code,omschrijving,bron
+tijdvak/mutatie,jaar,int(8),YYYYMMDD,int(8),8.,G662,jaar van verwerking,afgeleid
+,tydber,int(8),YYYYMMDD,char(8),$8.,G612,tijdstip van verwerking mutatie,
+persoonsgegevens,anummr,bigint(10),,char(10),$10.,G374,administratienummer,database
+,bsnumm,bigint(9),,char(9),$9.,G610,burgerservicenummer,database
+,unicod,bigint(14),,char(14),$14.,G471,unieke code persoon,kwartaal
+,gbdtb8,int(8),YYYYMMDD,char(8),$8.,G388,geboortedatum,database
+,gslcha,char(1),M of V,char(1),$1.,G373,geslacht,csv
+,lndgbb,int(3),,char(4),$4.,G489,code geboorteland,csv
+,gebpla,varchar(50),,char(50),$50.,G661,geboorteplaats,csv
+,bevcbs,int(1),"1-4, 6-8",char(1),$1.,G571,herkomstgroepering CBS,csv
+,etncbs,int(4),,char(4),$4.,G572,modelclassificatie herkomstgroepering CBS,csv
+,natiob,int(3),,char(3),$3.,G381,code van de nationaliteit,kwartaal
+relatiegegevens,uniou1,bigint(14),,char(14),$14.,G468,unieke code ouder1,kwartaal
+,uniou2,bigint(14),,char(14),$14.,G469,unieke code ouder2,kwartaal
+,gslou1,char(1),M of V,char(1),$1.,G425,geslacht van ouder1,kwartaal
+,gslou2,char(1),M of V,char(1),$1.,G426,geslacht van ouder2,kwartaal
+,gblou1,int(4),,char(4),$4.,,geboortelandcode ouder1,kwartaal
+,gblou2,int(4),,char(4),$4.,,geboortelandcode ouder2,kwartaal
+,gbdou1,int(8),YYYYMMDD,char(8),$8.,,geboortedatum van ouder1,kwartaal
+,gbdou2,int(8),YYYYMMDD,char(8),$8.,,geboortedatum van ouder2,kwartaal
+,lftou1,int(3),,int(3),3.,,leeftijd van ouder1 (op de geboortedatum van het kind),afgeleid
+,lftou2,int(3),,int(3),3.,,leeftijd van ouder2 (op de geboortedatum van het kind),afgeleid
+,bevou1,int(1),"1-4, 6-8",char(1),$1.,,herkomstgroepering CBS van ouder1,kwartaal
+,etnou1,int(4),,char(4),$1.,,modelclassificatie herkomstgroepering CBS van ouder1,kwartaal
+,bevou2,int(1),"1-4, 6-8",char(1),$1.,,herkomstgroepering CBS van ouder2,kwartaal
+,etnou2,int(4),,char(4),$4.,,modelclassificatie herkomstgroepering CBS van ouder2,kwartaal
+adresgegevens,strkod,int(5),,char(5),$5.,G328,straatcode,database of BAG
+,huisnr,int(5),,char(5),$5.,G330,huisnummer,database
+,huislt,char(1),,char(1),$1.,G340,huisletter,database
+,hstoev,varchar(4),,char(4),$4.,G33x,huisnummertoevoeging,database
+,bagids,bigint(15),36301xxxxxxxxxx,char(16),$16.,,landelijke bagidentificatie van het adresseerbaar object,BAG
+,numids,bigint(15),36301xxxxxxxxxx,char(16),$16.,,landelijke bagnummeridentificatie,BAG
+,brtk15,char(4),,char(4),$4.,G510,buurtindeling 2015,BAG
+,bctk15,char(3),,char(3),$3.,G511,buurtcombinatieindeling 2015,kwartaal
+,stad15,char(1),,char(1),$1.,G512,stadsdeelindeling 2015,kwartaal
+,pttkod,char(6),,char(6),$6.,G538,postcode,database
+,i22geb,char(4),,char(4),$4.,G513,gebiedsgericht werken indeling in 22 gebieden,kwartaal
+,i27geb,char(4),,char(4),$4.,G514,gebiedsgericht werken indeling in 27 gebieden,kwartaal
+,altbrt15,char(4),,char(4),$4.,G515,alternatieve buurtindeling stadsdelen 2015,kwartaal
+,rayon15,char(4),,char(4),$4.,G516,rayon indeling stadsdelen 2015,kwartaal
+,brtk10,char(4),,char(4),$4.,G584,buurtindeling 2010,kwartaal
+,adrs15,char(15),,char(15),$15.,G603,15 positie adrescode,afgeleid
