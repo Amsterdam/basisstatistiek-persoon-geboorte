@@ -272,6 +272,12 @@ on
 	a.persoon_id = d.persoon_id
 where
 	a.datum = b.ingeschreven_op
+and
+	(case when geldigheidsdatum_begin < kennisgevingsdatum_begin then
+		d.bs_nummer not in (select bsnumm from bron.kw20171)
+	else
+		true
+	end)
 order by
 	persoon_id;
 

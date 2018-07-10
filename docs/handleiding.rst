@@ -36,7 +36,7 @@ Mutatieberichten
 Uitdraaien van geboortes
 ------------------------
 
-#. Maak de volgende procedure zoals beschreven in `functie_kern.sql <https://git.datapunt.amsterdam.nl/Basisstatistiek/persoon-geboorte/raw/dd4af3c20f20e12daf1bacef569014f0f6288e2a/technisch/syntax/functie_kern.sql>`_. Draai het deel wat onder *stap 1* staat vermeld in `query.sql <https://git.datapunt.amsterdam.nl/Basisstatistiek/persoon-geboorte/raw/dd4af3c20f20e12daf1bacef569014f0f6288e2a/technisch/syntax/query.sql>`_ om de kern tabel  aan te maken. Zorg dat de parameters passen bij het tijdvak waarover de statistiek uitgedraaid dient te worden.
+#. Maak de volgende procedure zoals beschreven in `functie_kern.sql <https://git.datapunt.amsterdam.nl/Basisstatistiek/persoon-geboorte/raw/b143175b4ef8334e588faf0de47fc66fc4aa49a4/technisch/syntax/functie_kern.sql>`_. Draai het deel wat onder *stap 1* staat vermeld in `query.sql <https://git.datapunt.amsterdam.nl/Basisstatistiek/persoon-geboorte/raw/dd4af3c20f20e12daf1bacef569014f0f6288e2a/technisch/syntax/query.sql>`_ om de kern tabel  aan te maken. Zorg dat de parameters passen bij het tijdvak waarover de statistiek uitgedraaid dient te worden.
 #. Voor de nagekomen berichten, moeten dezelfde stappen worden gevolgd zoals hierboven staan vermeld. Pas echter het tijdvak waarover de statistiek moet worden gemaakt aan naar de juiste. Daarnaast moeten de aan te maken tabellen en functies andere namen krijgen. Voeg hiervoor achter elke tabelnaam en functie een 1 toe.
 
 Aangehaakte gegevens
